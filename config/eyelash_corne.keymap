@@ -381,55 +381,55 @@
             >;
         };
 
-        // numspace_layer { // Layer 12
-        //     display-name = "NumSpace";
+        numspace_layer { // Layer 12
+            display-name = "NumSpace";
     
-        //     bindings = <
-        //         &kp TAB   &kp EXCL  &kp AT   &kp HASH &kp DLLR &kp PRCNT               &kp UP               &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR  &kp MINUS
-        //         &trans    &kp N1    &kp N2   &kp N3   &kp N4   &kp N5        &kp LEFT  &kp ENTER &kp RIGHT  &kp N6    &kp N7    &kp N8    &kp N9   &kp N0    &kp PLUS
-        //         &kp LSHFT &kp MINUS &kp LBKT &kp RBKT &kp LBRC &kp RBRC  &kp SPACE     &kp DOWN             &kp LS(P) &kp P     &kp COMMA &kp DOT  &kp SLASH &mt RSHFT EQUAL
-        //                                               &mo ADJ  &mo LOW   &kp ENTER                          &trans    &mo RSE   &mo FUN   
-        //     >;
-        // };
+            bindings = <
+                &kp TAB   &kp EXCL  &kp AT   &kp HASH &kp DLLR &kp PRCNT               &kp UP               &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR  &kp MINUS
+                &trans    &kp N1    &kp N2   &kp N3   &kp N4   &kp N5        &kp LEFT  &kp ENTER &kp RIGHT  &kp N6    &kp N7    &kp N8    &kp N9   &kp N0    &kp PLUS
+                &kp LSHFT &kp MINUS &kp LBKT &kp RBKT &kp LBRC &kp RBRC  &kp SPACE     &kp DOWN             &kp LS(P) &kp P     &kp COMMA &kp DOT  &kp SLASH &mt RSHFT EQUAL
+                                                      &mo ADJ  &mo LOW   &kp ENTER                          &trans    &mo RSE   &mo FUN   
+            >;
+        };
 
-        // numtab_layer { // Layer 13 (currently unused)
-        //     display-name = "NumTab";
+        numtab_layer { // Layer 13 (currently unused)
+            display-name = "NumTab";
     
-        //     bindings = <
-        //         &kp TAB   &kp Q    &kp W    &kp E    &kp R       &kp T                   &kp UP               &kp Y         &kp U     &kp I     &kp O    &kp P     &kp BSPC
-        //         &lt CAPS  &kp A    &kp S    &kp D    &kp F       &kp G         &kp LEFT  &kp ENTER &kp RIGHT  &kp H         &kp J     &kp K     &kp L    &kp SEMI  &kp APOS
-        //         &kp LSHFT &kp Z    &kp X    &kp C    &kp V       &kp B    &kp SPACE      &kp DOWN             &kp N         &kp M     &kp COMMA &kp DOT  &kp SLASH &mt RSHFT ENTER
-        //                                     &mo ADJ  &mo LOW    &kp SPACE                                     &kp SPACE     &mo RSE   &mo FUN
-        //     >;
-        // };
+            bindings = <
+                &kp TAB   &kp Q    &kp W    &kp E    &kp R       &kp T                   &kp UP               &kp Y         &kp U     &kp I     &kp O    &kp P     &kp BSPC
+                &kp CAPS  &kp A    &kp S    &kp D    &kp F       &kp G         &kp LEFT  &kp ENTER &kp RIGHT  &kp H         &kp J     &kp K     &kp L    &kp SEMI  &kp APOS
+                &kp LSHFT &kp Z    &kp X    &kp C    &kp V       &kp B    &kp SPACE      &kp DOWN             &kp N         &kp M     &kp COMMA &kp DOT  &kp SLASH &mt RSHFT ENTER
+                                            &mo ADJ  &mo LOW    &kp SPACE                                     &kp SPACE     &mo RSE   &mo FUN
+            >;
+        };
 
-        // // The following two layers generate Colemak AltGr and Colemak AltGr-Shift international characters using Windows Alt+Numpad keystrokes.
-        // // Each key needs to be bound to a macro that sends the Alt+Numpad scancodes. You'll need lots of macros for this.
-        // // At the moment, only German Umlauts äöü, shifted German Umlauts ÄÖÜ and German "scharfes S" ß have been created.
-        // // ß (rewritten as "sz" in ASCII) has a very special binding because it functions as a layer shift when held, but needs to call
-        // // the uml_sz macro when tapped.
+        // The following two layers generate Colemak AltGr and Colemak AltGr-Shift international characters using Windows Alt+Numpad keystrokes.
+        // Each key needs to be bound to a macro that sends the Alt+Numpad scancodes. You'll need lots of macros for this.
+        // At the moment, only German Umlauts äöü, shifted German Umlauts ÄÖÜ and German "scharfes S" ß have been created.
+        // ß (rewritten as "sz" in ASCII) has a very special binding because it functions as a layer shift when held, but needs to call
+        // the uml_sz macro when tapped.
 
-        // altgr_layer { // Layer 14
-        //     display-name = "AltGr";
+        altgr_layer { // Layer 14
+            display-name = "AltGr";
     
-        //     bindings = <
-        //         &kp TAB       &uml_a   &kp W    &kp E      &kp R    &kp T                    &kp UP               &kp Y     &kp U     &kp I     &uml_u   &uml_o    &kp BSPC
-        //         &kp CAPS      &kp A    &kp S    &lsz AGS 0 &kp F    &kp G          &kp LEFT  &kp ENTER &kp RIGHT  &kp H     &kp J     &lt AGS K &kp L    &kp SEMI  &kp APOS
-        //         &lt AGS LSHFT &kp Z    &kp X    &kp C      &kp V    &kp B     &kp SPACE      &kp DOWN             &kp N     &kp M     &kp COMMA &kp DOT  &kp SLASH &lt AGS RSHFT
-        //                                         &mo ADJ    &mo LOW  &kp SPACE                                     &kp SPACE &mo RSE   &mo FUN
-        //     >;
-        // };
+            bindings = <
+                &kp TAB       &uml_a   &kp W    &kp E      &kp R    &kp T                    &kp UP               &kp Y     &kp U     &kp I     &uml_u   &uml_o    &kp BSPC
+                &kp CAPS      &kp A    &kp S    &lsz AGS 0 &kp F    &kp G          &kp LEFT  &kp ENTER &kp RIGHT  &kp H     &kp J     &lt AGS K &kp L    &kp SEMI  &kp APOS
+                &lt AGS LSHFT &kp Z    &kp X    &kp C      &kp V    &kp B     &kp SPACE      &kp DOWN             &kp N     &kp M     &kp COMMA &kp DOT  &kp SLASH &lt AGS RSHFT
+                                                &mo ADJ    &mo LOW  &kp SPACE                                     &kp SPACE &mo RSE   &mo FUN
+            >;
+        };
 
-        // altgrshift_layer { // Layer 15
-        //     display-name = "AltGrShift";
+        altgrshift_layer { // Layer 15
+            display-name = "AltGrShift";
     
-        //     bindings = <
-        //         &kp TAB   &umu_a   &kp W    &kp E    &kp R    &kp T                    &kp UP               &kp Y     &kp U     &kp I     &umu_u   &umu_o    &kp BSPC
-        //         &kp CAPS  &kp A    &kp S    &uml_sz  &kp F    &kp G          &kp LEFT  &kp ENTER &kp RIGHT  &kp H     &kp J     &kp K     &kp L    &kp SEMI  &kp APOS
-        //         &kp LSHFT &kp Z    &kp X    &kp C    &kp V    &kp B     &kp SPACE      &kp DOWN             &kp N     &kp M     &kp COMMA &kp DOT  &kp SLASH &kp RSHFT
-        //                                     &mo ADJ  &mo LOW  &kp SPACE                                     &kp SPACE &mo RSE   &mo FUN
-        //     >;
-        // };
+            bindings = <
+                &kp TAB   &umu_a   &kp W    &kp E    &kp R    &kp T                    &kp UP               &kp Y     &kp U     &kp I     &umu_u   &umu_o    &kp BSPC
+                &kp CAPS  &kp A    &kp S    &uml_sz  &kp F    &kp G          &kp LEFT  &kp ENTER &kp RIGHT  &kp H     &kp J     &kp K     &kp L    &kp SEMI  &kp APOS
+                &kp LSHFT &kp Z    &kp X    &kp C    &kp V    &kp B     &kp SPACE      &kp DOWN             &kp N     &kp M     &kp COMMA &kp DOT  &kp SLASH &kp RSHFT
+                                            &mo ADJ  &mo LOW  &kp SPACE                                     &kp SPACE &mo RSE   &mo FUN
+            >;
+        };
 
     };
 };
