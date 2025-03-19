@@ -249,16 +249,16 @@
             >;
         };
 
-        qwerty_hr_layer { // Layer 1
-            display-name = "QWERTY-HRM";
+        // qwerty_hr_layer { // Layer 1
+        //     display-name = "QWERTY-HRM";
 
-            bindings = <
-                &kp TAB      &kp Q       &kp W       &kp E        &kp R        &kp T                 &kp UP               &kp Y         &kp U        &kp I        &kp O       &kp P          &kp BSPC
-                &lt MAX BSPC &hml LALT A &hml RALT S &hml LSHFT D &hml LCTRL F &hml LGUI G &kp LEFT  &kp ENTER &kp RIGHT  &hmr RGUI H   &hmr RCTRL J &hmr RSHFT K &hmr RALT L &hmr LALT SEMI &kp APOS
-                &kp LSHFT    &kp Z       &kp X       &kp C        &kp V        &kp B   &mup LC(SPACE) LC(LS(M)) &kp DOWN  &kp N         &kp M        &kp COMMA    &kp DOT     &kp SLASH      &mt RSHFT ENTER
-                                                     &mo ADJ      &lt LOW TAB  &lt MSE SPACE                              &lt NSP SPACE &mo RSE      &mo FUN
-            >;
-        };
+        //     bindings = <
+        //         &kp TAB      &kp Q       &kp W       &kp E        &kp R        &kp T                 &kp UP               &kp Y         &kp U        &kp I        &kp O       &kp P          &kp BSPC
+        //         &lt MAX BSPC &hml LALT A &hml RALT S &hml LSHFT D &hml LCTRL F &hml LGUI G &kp LEFT  &kp ENTER &kp RIGHT  &hmr RGUI H   &hmr RCTRL J &hmr RSHFT K &hmr RALT L &hmr LALT SEMI &kp APOS
+        //         &kp LSHFT    &kp Z       &kp X       &kp C        &kp V        &kp B   &mup LC(SPACE) LC(LS(M)) &kp DOWN  &kp N         &kp M        &kp COMMA    &kp DOT     &kp SLASH      &mt RSHFT ENTER
+        //                                              &mo ADJ      &lt LOW TAB  &lt MSE SPACE                              &lt NSP SPACE &mo RSE      &mo FUN
+        //     >;
+        // };
 
         colemak_layer { // Layer 2
             display-name = "Colemak";
@@ -271,38 +271,38 @@
             >;
         };
 
-//        colemak_hr_layer { // Layer 3
-//            display-name = "Colemak-HRM";
-//
-//            bindings = <
-//                &kp TAB      &kp Q       &kp W       &kp F        &kp P        &kp G         &kp MINUS                &kp EQUAL &kp J         &kp L        &kp U        &kp Y       &kp SEMI    &kp BSPC
-//                &lt MAX BSPC &hml LALT A &hml RALT R &hml LSHFT S &hml LCTRL T &hml LGUI D   &kp LBKT                 &kp RBKT  &hmr RGUI H   &hmr RCTRL N &hmr RSHFT E &hmr RALT I &hmr LALT O &kp APOS
-//                &kp LSHFT    &kp Z       &kp X       &kp C        &kp V        &kp B         &mup LC(SPACE) LC(LS(M)) &kp SPACE &kp K         &kp M        &kp COMMA    &kp DOT     &kp SLASH   &mt RSHFT ENTER
-//                &kp LCTRL    &kp LGUI    &kp LALT    &mo ADJ      &lt LOW TAB  &lt MSE SPACE &none                    &none     &lt NSP SPACE &mo RSE      &mo FUN      &kp RALT    &kp RGUI    &mt RCTRL ENTER
-//            >;
-//        };
-//
-        colemak_hr_layer { // Layer 3
-            display-name = "Colemak-HRM";
+// //        colemak_hr_layer { // Layer 3
+// //            display-name = "Colemak-HRM";
+// //
+// //            bindings = <
+// //                &kp TAB      &kp Q       &kp W       &kp F        &kp P        &kp G         &kp MINUS                &kp EQUAL &kp J         &kp L        &kp U        &kp Y       &kp SEMI    &kp BSPC
+// //                &lt MAX BSPC &hml LALT A &hml RALT R &hml LSHFT S &hml LCTRL T &hml LGUI D   &kp LBKT                 &kp RBKT  &hmr RGUI H   &hmr RCTRL N &hmr RSHFT E &hmr RALT I &hmr LALT O &kp APOS
+// //                &kp LSHFT    &kp Z       &kp X       &kp C        &kp V        &kp B         &mup LC(SPACE) LC(LS(M)) &kp SPACE &kp K         &kp M        &kp COMMA    &kp DOT     &kp SLASH   &mt RSHFT ENTER
+// //                &kp LCTRL    &kp LGUI    &kp LALT    &mo ADJ      &lt LOW TAB  &lt MSE SPACE &none                    &none     &lt NSP SPACE &mo RSE      &mo FUN      &kp RALT    &kp RGUI    &mt RCTRL ENTER
+// //            >;
+// //        };
+// //
+//         colemak_hr_layer { // Layer 3
+//             display-name = "Colemak-HRM";
 
-            bindings = <
-                &kp TAB      &kp Q       &kp W       &kp F        &kp P        &kp G                 &kp UP               &kp J         &kp L        &kp U        &kp Y       &kp SEMI       &kp BSPC
-                &lt MAX BSPC &hml LALT A &hll AGR R  &hml LSHFT S &hml LCTRL T &hml LGUI D &kp LEFT  &kp ENTER &kp RIGHT  &hmr RGUI H   &hmr RCTRL N &hmr RSHFT E &hlr AGR I  &hmr LALT O    &kp APOS
-                &kp LSHFT    &kp Z       &kp X       &kp C        &kp V        &kp B   &mup LC(SPACE) LC(LS(M)) &kp DOWN  &kp K         &kp M        &kp COMMA    &kp DOT     &kp SLASH      &mt RSHFT ENTER
-                                                     &mo ADJ      &lt LOW TAB  &lt MSE SPACE                              &lt NSP SPACE &mo RSE      &mo FUN
-            >;
-        };
+//             bindings = <
+//                 &kp TAB      &kp Q       &kp W       &kp F        &kp P        &kp G                 &kp UP               &kp J         &kp L        &kp U        &kp Y       &kp SEMI       &kp BSPC
+//                 &lt MAX BSPC &hml LALT A &hll AGR R  &hml LSHFT S &hml LCTRL T &hml LGUI D &kp LEFT  &kp ENTER &kp RIGHT  &hmr RGUI H   &hmr RCTRL N &hmr RSHFT E &hlr AGR I  &hmr LALT O    &kp APOS
+//                 &kp LSHFT    &kp Z       &kp X       &kp C        &kp V        &kp B   &mup LC(SPACE) LC(LS(M)) &kp DOWN  &kp K         &kp M        &kp COMMA    &kp DOT     &kp SLASH      &mt RSHFT ENTER
+//                                                      &mo ADJ      &lt LOW TAB  &lt MSE SPACE                              &lt NSP SPACE &mo RSE      &mo FUN
+//             >;
+//         };
 
-        revmak_hr_layer { // Layer 4
-            display-name = "Colemak-reversed";
+//         revmak_hr_layer { // Layer 4
+//             display-name = "Colemak-reversed";
     
-            bindings = <
-                &kp TAB      &kp Q    &kp W    &kp K    &kp S       &kp F                   &kp UP               &kp O         &kp I     &kp L     &kp SEMI &kp R     &kp BSPC
-                &lt MAX BSPC &kp A    &kp D    &kp G    &kp E       &kp T         &kp LEFT  &kp ENTER &kp RIGHT  &kp H         &kp Y     &kp N     &kp U    &kp P     &kp APOS
-                &kp LSHFT    &kp Z    &kp X    &kp C    &kp V       &kp B    &mup LC(SPACE) LC(LS(M)) &kp DOWN   &kp J         &kp M     &kp COMMA &kp DOT  &kp SLASH &mt RSHFT ENTER
-                                               &mo ADJ  &lt LOW TAB &lt MSE SPACE                                &lt NSP SPACE &mo RSE   &mo FUN
-            >;
-        };
+//             bindings = <
+//                 &kp TAB      &kp Q    &kp W    &kp K    &kp S       &kp F                   &kp UP               &kp O         &kp I     &kp L     &kp SEMI &kp R     &kp BSPC
+//                 &lt MAX BSPC &kp A    &kp D    &kp G    &kp E       &kp T         &kp LEFT  &kp ENTER &kp RIGHT  &kp H         &kp Y     &kp N     &kp U    &kp P     &kp APOS
+//                 &kp LSHFT    &kp Z    &kp X    &kp C    &kp V       &kp B    &mup LC(SPACE) LC(LS(M)) &kp DOWN   &kp J         &kp M     &kp COMMA &kp DOT  &kp SLASH &mt RSHFT ENTER
+//                                                &mo ADJ  &lt LOW TAB &lt MSE SPACE                                &lt NSP SPACE &mo RSE   &mo FUN
+//             >;
+//         };
 
         transparent_layer { // Layer 5 (basic qwerty)
             display-name = "QWERTY (base)";
