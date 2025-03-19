@@ -304,16 +304,16 @@
             >;
         };
 
-        // transparent_layer { // Layer 5 (basic qwerty)
-        //     display-name = "QWERTY (base)";
+        transparent_layer { // Layer 5 (basic qwerty)
+            display-name = "QWERTY (base)";
     
-        //     bindings = <
-        //         &kp TAB   &kp Q    &kp W    &kp E    &kp R      &kp T                   &kp UP               &kp Y         &kp U     &kp I     &kp O    &kp P     &kp BSPC
-        //         &lt CAPS  &kp A    &kp S    &kp D    &kp F      &kp G         &kp LEFT  &kp ENTER &kp RIGHT  &kp H         &kp J     &kp K     &kp L    &kp SEMI  &kp APOS
-        //         &kp LSHFT &kp Z    &kp X    &kp C    &kp V      &kp B    &kp SPACE      &kp DOWN             &kp N         &kp M     &kp COMMA &kp DOT  &kp SLASH &mt RSHFT ENTER
-        //                                     &mo ADJ  &mo LOW    &kp SPACE                                     &kp SPACE     &mo RSE   &mo FUN
-        //     >;
-        // };
+            bindings = <
+                &kp TAB   &kp Q    &kp W    &kp E    &kp R      &kp T                   &kp UP               &kp Y         &kp U     &kp I     &kp O    &kp P     &kp BSPC
+                &kp CAPS  &kp A    &kp S    &kp D    &kp F      &kp G         &kp LEFT  &kp ENTER &kp RIGHT  &kp H         &kp J     &kp K     &kp L    &kp SEMI  &kp APOS
+                &kp LSHFT &kp Z    &kp X    &kp C    &kp V      &kp B    &kp SPACE      &kp DOWN             &kp N         &kp M     &kp COMMA &kp DOT  &kp SLASH &mt RSHFT ENTER
+                                            &mo ADJ  &mo LOW    &kp SPACE                                     &kp SPACE     &mo RSE   &mo FUN
+            >;
+        };
 
 //         lower_layer { // Layer 6 - a number pad on the right hand, function keys on the left
 //             display-name = "Lower";
