@@ -342,9 +342,9 @@
             display-name = "Adjust";
     
             bindings = <
-                &kp LA(TAB) &to QTY      &to QTY_HR     &to CMK      &to CMK_HR   &to CMR                   &kp UP               &trans    &trans    &trans    &trans         &trans     &kp LC(LA(DEL))
-                &kp DEL     &bt BT_SEL 0 &bt BT_SEL 1   &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &kp LEFT  &kp ENTER &kp RIGHT  &trans    &trans    &trans    &trans         &trans     &trans
-                &trans      &bt BT_CLR   &bt BT_CLR_ALL &out OUT_USB &out OUT_BLE &out OUT_TOG   &kp SPACE  &kp DOWN             &trans    &trans    &trans    &trans         &trans     &trans
+                &kp LA(TAB) &to QTY      &to QTY_HR     &to CMK      &to CMK_HR   &to CMR                   &kp UP               &rgb_ug RGB_ON  &rgb_ug RGB_SAI &rgb_ug RGB_BRI  &rgb_ug RGB_HUI &rgb_ug RGB_EFF &kp LC(LA(DEL))
+                &kp DEL     &bt BT_SEL 0 &bt BT_SEL 1   &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &kp LEFT  &kp ENTER &kp RIGHT  &rgb_ug RGB_OFF &rgb_ug RGB_SAD &rgb_ug RGB_BRD  &rgb_ug RGB_HUD &rgb_ug RGB_EFR &rgb_ug RGB_TOG
+                &trans      &bt BT_CLR   &bt BT_CLR_ALL &out OUT_USB &out OUT_BLE &out OUT_TOG   &kp SPACE  &kp DOWN             &trans          &trans    &trans    &trans         &trans     &trans
                                                         &trans       &sys_reset   &bootloader                                 &bootloader  &sys_reset   &studio_unlock
             >;
         };
