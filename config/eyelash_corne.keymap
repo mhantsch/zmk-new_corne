@@ -260,16 +260,16 @@
         //     >;
         // };
 
-        colemak_layer { // Layer 2
-            display-name = "Colemak";
+        // colemak_layer { // Layer 2
+        //     display-name = "Colemak";
     
-            bindings = <
-                &kp TAB      &kp Q    &kp W    &kp F    &kp P       &kp G                   &kp UP               &kp J         &kp L     &kp U     &kp Y    &kp SEMI  &kp BSPC
-                &lt MAX BSPC &kp A    &kp R    &kp S    &kp T       &kp D         &kp LEFT  &kp ENTER &kp RIGHT  &kp H         &kp N     &kp E     &kp I    &kp O     &kp APOS
-                &kp LSHFT    &kp Z    &kp X    &kp C    &kp V       &kp B    &mup LC(SPACE) LC(LS(M)) &kp DOWN   &kp K         &kp M     &kp COMMA &kp DOT  &kp SLASH &mt RSHFT ENTER
-                                               &mo ADJ  &lt LOW TAB &lt MSE SPACE                                &lt NSP SPACE &mo RSE   &mo FUN
-            >;
-        };
+        //     bindings = <
+        //         &kp TAB      &kp Q    &kp W    &kp F    &kp P       &kp G                   &kp UP               &kp J         &kp L     &kp U     &kp Y    &kp SEMI  &kp BSPC
+        //         &lt MAX BSPC &kp A    &kp R    &kp S    &kp T       &kp D         &kp LEFT  &kp ENTER &kp RIGHT  &kp H         &kp N     &kp E     &kp I    &kp O     &kp APOS
+        //         &kp LSHFT    &kp Z    &kp X    &kp C    &kp V       &kp B    &mup LC(SPACE) LC(LS(M)) &kp DOWN   &kp K         &kp M     &kp COMMA &kp DOT  &kp SLASH &mt RSHFT ENTER
+        //                                        &mo ADJ  &lt LOW TAB &lt MSE SPACE                                &lt NSP SPACE &mo RSE   &mo FUN
+        //     >;
+        // };
 
 // //        colemak_hr_layer { // Layer 3
 // //            display-name = "Colemak-HRM";
