@@ -1,5 +1,6 @@
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 30    // 10 or 25
+// #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
+// #define ZMK_POINTING_DEFAULT_SCRL_VAL 25    // 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 30    // default: 10
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -29,21 +30,21 @@
 #define AGR 14      // AltGr (for Windows Umlauts via Alt+Numpad)
 #define AGS 15      // AltGr+Shift (for Windows uppercase Umlauts via Alt+Numpad)
 
-&mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
+// &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
-&msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
+// &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
-&msc {
-    acceleration-exponent = <1>;      // 0
-    time-to-max-speed-ms = <100>;     // 300
-    delay-ms = <0>;                   // 0
-};
+// &msc {
+//     acceleration-exponent = <1>;      // 0
+//     time-to-max-speed-ms = <100>;     // 300
+//     delay-ms = <0>;                   // 0
+// };
 
-&mmv {
-    time-to-max-speed-ms = <500>;
-    acceleration-exponent = <1>;
-    trigger-period-ms = <16>;
-};
+// &mmv {
+//     time-to-max-speed-ms = <500>;
+//     acceleration-exponent = <1>;
+//     trigger-period-ms = <16>;
+// };
 
 &lt {
     quick-tap-ms = <200>;
