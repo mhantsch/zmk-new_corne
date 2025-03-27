@@ -573,7 +573,7 @@ layers:
   - Ctl+Sft+X
   - Ctl+Sft+C
   - Ctl+Sft+V
-  - B
+  - {t: Ctl+Sft+M, h: 'Ctl+$$mdi:keyboard-space$$'}
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
   - N
@@ -797,3 +797,6 @@ combos:
 - p: [23, 24, 25]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [QWERTY, QWERTY-HRM, Colemak, Colemak-HRM, Colemak-reversed, QWERTY (base), Lower, Raise]
+- p: [0, 1]
+  k: '&blockquote'
+  l: [Raise, Fun/Media, NumSpace]
