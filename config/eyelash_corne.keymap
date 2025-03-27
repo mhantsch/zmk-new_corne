@@ -150,7 +150,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp APOS &kp APOS &kp APOS &kp ENTER &kp ENTER &kp APOS &kp APOS &kp APOS &kp ENTER>
+                = <&macro_tap &kp GRAVE &kp GRAVE &kp GRAVE &kp ENTER &kp ENTER &kp GRAVE &kp GRAVE &kp GRAVE &kp ENTER>
                 , <&macro_tap &kp UP &kp UP>;
         };
         uml_a: umlaut_a {
