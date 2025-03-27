@@ -254,7 +254,7 @@
         compatible = "zmk,keymap";
 
         qwerty_layer { // Layer 0 (default_layer)
-            display-name = "QWERTY";
+            display-name = "Qwerty";
 
             bindings = <
                 &kp TAB      &kp Q    &kp W    &kp E    &kp R       &kp T                   &kp UP               &kp Y         &kp U     &kp I     &kp O    &kp P     &kp BSPC
@@ -265,7 +265,7 @@
         };
 
         qwerty_hr_layer { // Layer 1
-            display-name = "QWERTY-HRM";
+            display-name = "Qty-HRM";
 
             bindings = <
                 &kp TAB      &kp Q       &kp W       &kp E        &kp R        &kp T                 &kp UP               &kp Y         &kp U        &kp I        &kp O       &kp P          &kp BSPC
@@ -298,7 +298,7 @@
 //        };
 //
         colemak_hr_layer { // Layer 3
-            display-name = "Colemak-HRM";
+            display-name = "CmkHRM";
 
             bindings = <
                 &kp TAB      &kp Q       &kp W       &kp F        &kp P        &kp G                 &kp UP               &kp J         &kp L        &kp U        &kp Y       &kp SEMI       &kp BSPC
@@ -309,7 +309,7 @@
         };
 
         revmak_hr_layer { // Layer 4
-            display-name = "Colemak-reversed";
+            display-name = "rev-Cmk";
     
             bindings = <
                 &kp TAB      &kp Q    &kp W    &kp K    &kp S       &kp F                   &kp UP               &kp O         &kp I     &kp L     &kp SEMI &kp R     &kp BSPC
@@ -397,7 +397,7 @@
         };
 
         numspace_layer { // Layer 12
-            display-name = "NumSpace";
+            display-name = "NumSpc";
     
             bindings = <
                 &kp TAB   &kp EXCL  &kp AT   &kp HASH &kp DLLR &kp PRCNT               &kp UP               &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR  &kp MINUS
@@ -436,7 +436,7 @@
         };
 
         altgrshift_layer { // Layer 15
-            display-name = "AltGrShift";
+            display-name = "AltGrShft";
     
             bindings = <
                 &kp TAB   &umu_a   &kp W    &kp E    &kp R    &kp T                    &kp UP               &kp Y     &kp U     &kp I     &umu_u   &umu_o    &kp BSPC
