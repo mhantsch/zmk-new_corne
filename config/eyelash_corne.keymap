@@ -175,9 +175,23 @@
             layers = <QTY QTY_HR CMK CMK_HR CMR TRN LOW RSE>;
             bindings = <&kp ENTER>;
         };
+        combo_blockquote_esc_tab_q {
+            require-prior-idle-ms = <100>;
+            timeout-ms = <100>;
+            key-positions = <0 1>;
+            layers = <RSE FUN NSP>;
+            bindings = <&blockquote>;
+        };
     };
 
     macros {
+        blockquote: blockquote {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp APOS &kp APOS &kp APOS &kp ENTER &kp ENTER &kp APOS &kp APOS &kp APOS &kp ENTER>
+                , <&macro_tap &kp UP &kp UP>
+        };
         uml_a: umlaut_a {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -375,10 +389,10 @@
             display-name = "Mouse";
      
             bindings = <
-                &kp ESC   &kp ESC       &kp LC(W)     &kp LC(PG_UP) &kp LC(PG_DN) &kp LC(F)               &kp UP               &msc SCRL_UP   &msc SCRL_LEFT &mmv MOVE_UP   &msc SCRL_RIGHT &kp P     &kp BSPC
-                &kp CAPS  &kp A         &mkp MB2      &mkp MB3      &mkp MB1      &kp G         &kp LEFT  &kp ENTER &kp RIGHT  &msc SCRL_DOWN &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &kp SEMI  &kp ENTER
-                &kp LSHFT &kp C_AL_LOCK &kp LC(LS(X)) &kp LC(LS(C)) &kp LC(LS(V)) &kp B     &kp SPACE     &kp DOWN             &kp N          &kp M          &kp COMMA      &kp DOT         &kp SLASH &kp RSHFT
-                                                      &mo ADJ       &mo LOW       &kp SPACE                                    &mkp MB1       &mo RSE        &mo FUN
+                &kp ESC   &kp ESC       &kp LC(W)     &kp LC(PG_UP) &kp LC(PG_DN) &kp LC(F)                          &kp UP               &msc SCRL_UP   &msc SCRL_LEFT &mmv MOVE_UP   &msc SCRL_RIGHT &kp P     &kp BSPC
+                &kp CAPS  &kp A         &mkp MB2      &mkp MB3      &mkp MB1      &kp G                    &kp LEFT  &kp ENTER &kp RIGHT  &msc SCRL_DOWN &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &kp SEMI  &kp ENTER
+                &kp LSHFT &kp C_AL_LOCK &kp LC(LS(X)) &kp LC(LS(C)) &kp LC(LS(V)) &mup LC(SPACE) LC(LS(M)) &kp SPACE &kp DOWN             &kp N          &kp M          &kp COMMA      &kp DOT         &kp SLASH &kp RSHFT
+                                                      &mo ADJ       &mo LOW       &kp SPACE                                               &mkp MB1       &mo RSE        &mo FUN
             >;
         };
 
