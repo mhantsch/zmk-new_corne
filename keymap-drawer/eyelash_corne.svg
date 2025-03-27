@@ -328,8 +328,8 @@ rect.held, rect.combo.held {
   visibility: hidden;
 }
 </style>
-<g transform="translate(40, 0)" class="layer-QWERTY">
-<text x="0" y="28" class="label" id="QWERTY">QWERTY:</text>
+<g transform="translate(40, 0)" class="layer-Qwerty">
+<text x="0" y="28" class="label" id="Qwerty">Qwerty:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -575,8 +575,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-space"/>
-<a href="#NumSpace">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 75%">NumSpace</tspan></text>
+<a href="#NumSpc">
+<text x="0" y="24" class="key hold layer-activator">NumSpc</text>
 </a></g>
 <g transform="translate(695, 209) rotate(-12.0)" class="key keypos-46">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -611,8 +611,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 318)" class="layer-QWERTY-HRM">
-<text x="0" y="28" class="label" id="QWERTY-HRM">QWERTY-HRM:</text>
+<g transform="translate(40, 318)" class="layer-Qty-HRM">
+<text x="0" y="28" class="label" id="Qty-HRM">Qty-HRM:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -868,8 +868,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-space"/>
-<a href="#NumSpace">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 75%">NumSpace</tspan></text>
+<a href="#NumSpc">
+<text x="0" y="24" class="key hold layer-activator">NumSpc</text>
 </a></g>
 <g transform="translate(695, 209) rotate(-12.0)" class="key keypos-46">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1151,8 +1151,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-space"/>
-<a href="#NumSpace">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 75%">NumSpace</tspan></text>
+<a href="#NumSpc">
+<text x="0" y="24" class="key hold layer-activator">NumSpc</text>
 </a></g>
 <g transform="translate(695, 209) rotate(-12.0)" class="key keypos-46">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1187,8 +1187,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 955)" class="layer-Colemak-HRM">
-<text x="0" y="28" class="label" id="Colemak-HRM">Colemak-HRM:</text>
+<g transform="translate(40, 955)" class="layer-CmkHRM">
+<text x="0" y="28" class="label" id="CmkHRM">CmkHRM:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1446,8 +1446,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-space"/>
-<a href="#NumSpace">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 75%">NumSpace</tspan></text>
+<a href="#NumSpc">
+<text x="0" y="24" class="key hold layer-activator">NumSpc</text>
 </a></g>
 <g transform="translate(695, 209) rotate(-12.0)" class="key keypos-46">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1482,8 +1482,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 1274)" class="layer-Colemak-reversed">
-<text x="0" y="28" class="label" id="Colemak-reversed">Colemak-reversed:</text>
+<g transform="translate(40, 1274)" class="layer-rev-Cmk">
+<text x="0" y="28" class="label" id="rev-Cmk">rev-Cmk:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1729,8 +1729,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-space"/>
-<a href="#NumSpace">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 75%">NumSpace</tspan></text>
+<a href="#NumSpc">
+<text x="0" y="24" class="key hold layer-activator">NumSpc</text>
 </a></g>
 <g transform="translate(695, 209) rotate(-12.0)" class="key keypos-46">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -2624,15 +2624,15 @@ rect.held, rect.combo.held {
 <g transform="translate(84, 49)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#QWERTY">
-<text x="0" y="-4" class="key tap layer-activator">QWERTY</text>
+<a href="#Qwerty">
+<text x="0" y="-4" class="key tap layer-activator">Qwerty</text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(140, 35)" class="key keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">QWERTY</tspan><tspan x="0" dy="1.2em">-HRM</tspan>
+<tspan x="0" dy="-1.2em">Qty-</tspan><tspan x="0" dy="1.2em">HRM</tspan>
 </text>
 <text x="0" y="24" class="key hold">toggle</text>
 </g>
@@ -2646,16 +2646,15 @@ rect.held, rect.combo.held {
 <g transform="translate(252, 35)" class="key keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 86%">Colemak</tspan><tspan x="0" dy="1.2em" style="font-size: 86%">-HRM</tspan>
-</text>
-<text x="0" y="24" class="key hold">toggle</text>
+<a href="#CmkHRM">
+<text x="0" y="-4" class="key tap layer-activator">CmkHRM</text>
+</a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(308, 41)" class="key keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 75%">Colemak</tspan><tspan x="0" dy="1.2em" style="font-size: 75%">-</tspan><tspan x="0" dy="1.2em" style="font-size: 75%">reversed</tspan>
+<tspan x="0" dy="-1.2em">rev-</tspan><tspan x="0" dy="1.2em">Cmk</tspan>
 </text>
 <text x="0" y="24" class="key hold">toggle</text>
 </g>
@@ -3693,8 +3692,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 3822)" class="layer-NumSpace">
-<text x="0" y="28" class="label" id="NumSpace">NumSpace:</text>
+<g transform="translate(40, 3822)" class="layer-NumSpc">
+<text x="0" y="28" class="label" id="NumSpc">NumSpc:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -4307,8 +4306,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap"><tspan style="font-size: 86%">&amp;uml_sz</tspan></text>
-<a href="#AltGrShift">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 60%">AltGrShift</tspan></text>
+<a href="#AltGrShft">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 67%">AltGrShft</tspan></text>
 </a></g>
 <g transform="translate(252, 91)" class="key keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -4349,8 +4348,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">K</text>
-<a href="#AltGrShift">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 60%">AltGrShift</tspan></text>
+<a href="#AltGrShft">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 67%">AltGrShft</tspan></text>
 </a></g>
 <g transform="translate(840, 91)" class="key held alternate keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held alternate side"/>
@@ -4372,8 +4371,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-shift"/>
-<a href="#AltGrShift">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 60%">AltGrShift</tspan></text>
+<a href="#AltGrShft">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 67%">AltGrShft</tspan></text>
 </a></g>
 <g transform="translate(84, 161)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -4442,8 +4441,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-shift"/>
-<a href="#AltGrShift">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 60%">AltGrShift</tspan></text>
+<a href="#AltGrShft">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 67%">AltGrShft</tspan></text>
 </a></g>
 <g transform="translate(224, 203)" class="key keypos-42">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -4482,8 +4481,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 4777)" class="layer-AltGrShift">
-<text x="0" y="28" class="label" id="AltGrShift">AltGrShift:</text>
+<g transform="translate(40, 4777)" class="layer-AltGrShft">
+<text x="0" y="28" class="label" id="AltGrShft">AltGrShft:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>

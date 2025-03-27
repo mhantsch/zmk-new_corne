@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
-  QWERTY:
+  Qwerty:
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -46,10 +46,10 @@ layers:
   - Adjust
   - {t: '$$mdi:keyboard-tab$$', h: Lower}
   - {t: '$$mdi:keyboard-space$$', h: Mouse}
-  - {t: '$$mdi:keyboard-space$$', h: NumSpace}
+  - {t: '$$mdi:keyboard-space$$', h: NumSpc}
   - Raise
   - Fun/Media
-  QWERTY-HRM:
+  Qty-HRM:
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -95,7 +95,7 @@ layers:
   - Adjust
   - {t: '$$mdi:keyboard-tab$$', h: Lower}
   - {t: '$$mdi:keyboard-space$$', h: Mouse}
-  - {t: '$$mdi:keyboard-space$$', h: NumSpace}
+  - {t: '$$mdi:keyboard-space$$', h: NumSpc}
   - Raise
   - Fun/Media
   Colemak:
@@ -144,10 +144,10 @@ layers:
   - Adjust
   - {t: '$$mdi:keyboard-tab$$', h: Lower}
   - {t: '$$mdi:keyboard-space$$', h: Mouse}
-  - {t: '$$mdi:keyboard-space$$', h: NumSpace}
+  - {t: '$$mdi:keyboard-space$$', h: NumSpc}
   - Raise
   - Fun/Media
-  Colemak-HRM:
+  CmkHRM:
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -193,10 +193,10 @@ layers:
   - Adjust
   - {t: '$$mdi:keyboard-tab$$', h: Lower}
   - {t: '$$mdi:keyboard-space$$', h: Mouse}
-  - {t: '$$mdi:keyboard-space$$', h: NumSpace}
+  - {t: '$$mdi:keyboard-space$$', h: NumSpc}
   - Raise
   - Fun/Media
-  Colemak-reversed:
+  rev-Cmk:
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -242,7 +242,7 @@ layers:
   - Adjust
   - {t: '$$mdi:keyboard-tab$$', h: Lower}
   - {t: '$$mdi:keyboard-space$$', h: Mouse}
-  - {t: '$$mdi:keyboard-space$$', h: NumSpace}
+  - {t: '$$mdi:keyboard-space$$', h: NumSpc}
   - Raise
   - Fun/Media
   QWERTY (base):
@@ -394,11 +394,11 @@ layers:
   - Fun/Media
   Adjust:
   - Alt+$$mdi:keyboard-tab$$
-  - {t: QWERTY, h: toggle}
-  - {t: QWERTY-HRM, h: toggle}
+  - {t: Qwerty, h: toggle}
+  - {t: Qty-HRM, h: toggle}
   - {t: Colemak, h: toggle}
-  - {t: Colemak-HRM, h: toggle}
-  - {t: Colemak-reversed, h: toggle}
+  - {t: CmkHRM, h: toggle}
+  - {t: rev-Cmk, h: toggle}
   - $$mdi:arrow-up-bold$$
   - RGB ON
   - RGB SAI
@@ -588,7 +588,7 @@ layers:
   - '&mkp MB1'
   - Raise
   - Fun/Media
-  NumSpace:
+  NumSpc:
   - $$mdi:keyboard-tab$$
   - '!'
   - '@'
@@ -703,7 +703,7 @@ layers:
   - $$mdi:apple-keyboard-caps$$
   - A
   - {t: S, type: held}
-  - {t: '&uml_sz', h: AltGrShift}
+  - {t: '&uml_sz', h: AltGrShft}
   - F
   - G
   - $$mdi:arrow-left-bold$$
@@ -711,11 +711,11 @@ layers:
   - $$mdi:arrow-right-bold$$
   - H
   - J
-  - {t: K, h: AltGrShift}
+  - {t: K, h: AltGrShft}
   - {t: L, type: held alternate}
   - {t: ;, s: ':'}
   - .
-  - {t: '$$mdi:apple-keyboard-shift$$', h: AltGrShift}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: AltGrShft}
   - Z
   - X
   - C
@@ -728,14 +728,14 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: AltGrShift}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: AltGrShft}
   - Adjust
   - Lower
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-space$$
   - Raise
   - Fun/Media
-  AltGrShift:
+  AltGrShft:
   - $$mdi:keyboard-tab$$
   - '&umu_a'
   - W
@@ -787,16 +787,16 @@ layers:
 combos:
 - p: [1, 2]
   k: $$mdi:keyboard-esc$$
-  l: [QWERTY, QWERTY-HRM, Colemak, Colemak-HRM, Colemak-reversed, QWERTY (base)]
+  l: [Qwerty, Qty-HRM, Colemak, CmkHRM, rev-Cmk, QWERTY (base)]
 - p: [0, 1]
   k: $$mdi:keyboard-esc$$
-  l: [QWERTY, QWERTY-HRM, Colemak, Colemak-HRM, Colemak-reversed, QWERTY (base)]
+  l: [Qwerty, Qty-HRM, Colemak, CmkHRM, rev-Cmk, QWERTY (base)]
 - p: [26, 27]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
-  l: [QWERTY, QWERTY-HRM, Colemak, Colemak-HRM, Colemak-reversed, QWERTY (base), Lower, Raise]
+  l: [Qwerty, Qty-HRM, Colemak, CmkHRM, rev-Cmk, QWERTY (base), Lower, Raise]
 - p: [23, 24, 25]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
-  l: [QWERTY, QWERTY-HRM, Colemak, Colemak-HRM, Colemak-reversed, QWERTY (base), Lower, Raise]
+  l: [Qwerty, Qty-HRM, Colemak, CmkHRM, rev-Cmk, QWERTY (base), Lower, Raise]
 - p: [0, 1]
   k: '&blockquote'
-  l: [Raise, Fun/Media, NumSpace]
+  l: [Raise, Fun/Media, NumSpc]
