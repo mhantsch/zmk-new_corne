@@ -145,45 +145,6 @@
 // &kp LCTRL  &kp Z  &kp X      &kp C     &kp V  &kp B       &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
 //                              &kp LGUI  &mo 1  &lt 3 SPACE                                              &lt 3 ENTER  &mo 2  &kp RALT
 
-    combos {
-        compatible = "zmk,combos";
-        combo_esc_q_w {
-            require-prior-idle-ms = <100>;
-            timeout-ms = <100>;
-            key-positions = <1 2>;
-            layers = <QTY QTY_HR CMK CMK_HR CMR TRN>;
-            bindings = <&kp ESC>;
-        };
-        combo_esc_tab_q {
-            require-prior-idle-ms = <100>;
-            timeout-ms = <100>;
-            key-positions = <0 1>;
-            layers = <QTY QTY_HR CMK CMK_HR CMR TRN>;
-            bindings = <&kp ESC>;
-        };
-        combo_enter_o_apos {
-            require-prior-idle-ms = <100>;
-            timeout-ms = <100>;
-            key-positions = <26 27>;
-            layers = <QTY QTY_HR CMK CMK_HR CMR TRN LOW RSE>;
-            bindings = <&kp ENTER>;
-        };
-        combo_enter_n_e_i {
-            require-prior-idle-ms = <100>;
-            timeout-ms = <100>;
-            key-positions = <23 24 25>;
-            layers = <QTY QTY_HR CMK CMK_HR CMR TRN LOW RSE>;
-            bindings = <&kp ENTER>;
-        };
-        combo_blockquote_esc_tab_q {
-            require-prior-idle-ms = <100>;
-            timeout-ms = <100>;
-            key-positions = <0 1>;
-            layers = <RSE FUN NSP>;
-            bindings = <&blockquote>;
-        };
-    };
-
     macros {
         blockquote: blockquote {
             compatible = "zmk,behavior-macro";
@@ -247,6 +208,45 @@
                 = <&macro_press &kp LALT>
                 , <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N0>
                 , <&macro_release &kp LALT>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+        combo_esc_q_w {
+            require-prior-idle-ms = <100>;
+            timeout-ms = <100>;
+            key-positions = <1 2>;
+            layers = <QTY QTY_HR CMK CMK_HR CMR TRN>;
+            bindings = <&kp ESC>;
+        };
+        combo_esc_tab_q {
+            require-prior-idle-ms = <100>;
+            timeout-ms = <100>;
+            key-positions = <0 1>;
+            layers = <QTY QTY_HR CMK CMK_HR CMR TRN>;
+            bindings = <&kp ESC>;
+        };
+        combo_enter_o_apos {
+            require-prior-idle-ms = <100>;
+            timeout-ms = <100>;
+            key-positions = <26 27>;
+            layers = <QTY QTY_HR CMK CMK_HR CMR TRN LOW RSE>;
+            bindings = <&kp ENTER>;
+        };
+        combo_enter_n_e_i {
+            require-prior-idle-ms = <100>;
+            timeout-ms = <100>;
+            key-positions = <23 24 25>;
+            layers = <QTY QTY_HR CMK CMK_HR CMR TRN LOW RSE>;
+            bindings = <&kp ENTER>;
+        };
+        combo_blockquote_esc_tab_q {
+            require-prior-idle-ms = <100>;
+            timeout-ms = <100>;
+            key-positions = <0 1>;
+            layers = <RSE FUN NSP>;
+            bindings = <&blockquote>;
         };
     };
 
