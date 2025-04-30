@@ -309,6 +309,7 @@
         };
 
         revmak_hr_layer { // Layer 4
+            // hrm functionality currently missing on this layer
             display-name = "rev-Cmk";
     
             bindings = <
