@@ -28,7 +28,7 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - .
+  - {t: ., h: Maxtend}
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
@@ -77,7 +77,7 @@ layers:
   - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: '$$mdi:apple-keyboard-option$$', s: ':'}
-  - .
+  - {t: ., h: Maxtend}
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
@@ -126,7 +126,7 @@ layers:
   - E
   - I
   - O
-  - .
+  - {t: ., h: Maxtend}
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
@@ -175,7 +175,7 @@ layers:
   - {t: E, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: I, h: AltGr}
   - {t: O, h: '$$mdi:apple-keyboard-option$$'}
-  - .
+  - {t: ., h: Maxtend}
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
@@ -224,7 +224,7 @@ layers:
   - N
   - U
   - P
-  - .
+  - {t: ., h: Maxtend}
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
@@ -518,7 +518,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-return$$', type: held alternate}
   - $$mdi:apple-keyboard-shift$$
   - Ctl+Z
   - Ctl+X
