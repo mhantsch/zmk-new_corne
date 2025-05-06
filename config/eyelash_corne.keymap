@@ -12,6 +12,7 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/backlight.h>
 
 #define QTY 0       // QWERTY
 #define QTY_HR 1    // QWERTY w/ HRM
@@ -359,7 +360,7 @@
             bindings = <
                 &kp LA(TAB) &to QTY      &to QTY_HR     &to CMK      &to CMK_HR   &to CMR                   &kp UP               &rgb_ug RGB_ON  &rgb_ug RGB_SAI &rgb_ug RGB_BRI  &rgb_ug RGB_HUI &rgb_ug RGB_EFF &kp LC(LA(DEL))
                 &kp DEL     &bt BT_SEL 0 &bt BT_SEL 1   &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &kp LEFT  &kp ENTER &kp RIGHT  &rgb_ug RGB_OFF &rgb_ug RGB_SAD &rgb_ug RGB_BRD  &rgb_ug RGB_HUD &rgb_ug RGB_EFR &rgb_ug RGB_TOG
-                &trans      &bt BT_CLR   &bt BT_CLR_ALL &out OUT_USB &out OUT_BLE &out OUT_TOG   &kp SPACE  &kp DOWN             &trans          &trans    &trans    &trans         &trans     &trans
+                &trans      &bt BT_CLR   &bt BT_CLR_ALL &out OUT_USB &out OUT_BLE &out OUT_TOG   &kp SPACE  &kp DOWN             &bl BL_ON       &bl BL_OFF      &bl BL_INC       &bl BL_DEC      &bl BL_CYCLE    &bl BL_TOG
                                                         &trans       &sys_reset   &bootloader                                 &bootloader  &sys_reset   &studio_unlock
             >;
         };
@@ -382,7 +383,7 @@
                 &kp TAB   &kp ESC   &msc SCRL_UP   &kp C_AC_BACK &kp C_AC_FORWARD &trans                  &kp UP               &kp PG_UP     &kp HOME  &kp UP     &kp END   &kp DEL   &kp INS
                 &trans    &kp LALT  &msc SCRL_DOWN &kp LSHFT     &kp LCTRL        &kp LGUI      &kp LEFT  &kp ENTER &kp RIGHT  &kp PG_DN     &kp LEFT  &kp DOWN   &kp RIGHT &kp BSPC  &kp ENTER
                 &kp LSHFT &kp LC(Z) &kp LC(X)      &kp LC(C)     &kp LC(V)        &kp LC(B) &kp SPACE     &kp DOWN             &trans        &trans    &trans     &trans    &kp K_APP &kp RSHFT
-                                                   &mo ADJ       &mo LOW          &kp ENTER                                    &kp LC(SPACE) &mo RSE   &mo FUN
+                                                   &mo ADJ       &kp LA(TAB)      &kp ENTER                                    &kp LC(SPACE) &mo RSE   &mo FUN
             >;
         };
 
