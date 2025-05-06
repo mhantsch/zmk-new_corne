@@ -429,12 +429,12 @@ layers:
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&bl BL_ON'
+  - '&bl BL_OFF'
+  - '&bl BL_INC'
+  - '&bl BL_DEC'
+  - '&bl BL_CYCLE'
+  - '&bl BL_TOG'
   - {type: held}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:progress-download$$
@@ -534,7 +534,7 @@ layers:
   - APP
   - $$mdi:apple-keyboard-shift$$
   - Adjust
-  - Lower
+  - Alt+$$mdi:keyboard-tab$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - Ctl+$$mdi:keyboard-space$$
   - Raise
