@@ -14,10 +14,10 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
-#define QTY 0       // QWERTY
-#define QTY_HR 1    // QWERTY w/ HRM
-#define CMK 2       // Colemak
-#define CMK_HR 3    // Colemak w/ HRM
+#define QTY_HR 0    // QWERTY w/ HRM
+#define QTY 1       // QWERTY
+#define CMK_HR 2    // Colemak w/ HRM
+#define CMK 3       // Colemak
 #define CMR 4       // Colemak Reversed
 #define TRN 5       // Transparent (basic querty)
 #define LOW 6       // Lower
@@ -254,18 +254,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        qwerty_layer { // Layer 0 (default_layer)
-            display-name = "Qwerty";
-
-            bindings = <
-                &kp TAB      &kp Q    &kp W    &kp E    &kp R       &kp T                   &kp UP               &kp Y         &kp U     &kp I     &kp O    &kp P     &kp BSPC
-                &lt MAX BSPC &kp A    &kp S    &kp D    &kp F       &kp G         &kp LEFT  &kp ENTER &kp RIGHT  &kp H         &kp J     &kp K     &kp L    &kp SEMI  &lt MAX APOS
-                &kp LSHFT    &kp Z    &kp X    &kp C    &kp V       &kp B    &mup LC(SPACE) LC(LS(M)) &kp DOWN   &kp N         &kp M     &kp COMMA &kp DOT  &kp SLASH &mt RSHFT ENTER
-                                               &mo ADJ  &lt LOW TAB &lt MSE SPACE                                &lt NSP SPACE &mo RSE   &mo FUN
-            >;
-        };
-
-        qwerty_hr_layer { // Layer 1
+        qwerty_hr_layer { // Layer 0 (default)
             display-name = "Qty-HRM";
 
             bindings = <
@@ -276,29 +265,18 @@
             >;
         };
 
-        colemak_layer { // Layer 2
-            display-name = "Colemak";
-    
+        qwerty_layer { // Layer 1
+            display-name = "Qwerty";
+
             bindings = <
-                &kp TAB      &kp Q    &kp W    &kp F    &kp P       &kp G                   &kp UP               &kp J         &kp L     &kp U     &kp Y    &kp SEMI  &kp BSPC
-                &lt MAX BSPC &kp A    &kp R    &kp S    &kp T       &kp D         &kp LEFT  &kp ENTER &kp RIGHT  &kp H         &kp N     &kp E     &kp I    &kp O     &lt MAX APOS
-                &kp LSHFT    &kp Z    &kp X    &kp C    &kp V       &kp B    &mup LC(SPACE) LC(LS(M)) &kp DOWN   &kp K         &kp M     &kp COMMA &kp DOT  &kp SLASH &mt RSHFT ENTER
+                &kp TAB      &kp Q    &kp W    &kp E    &kp R       &kp T                   &kp UP               &kp Y         &kp U     &kp I     &kp O    &kp P     &kp BSPC
+                &lt MAX BSPC &kp A    &kp S    &kp D    &kp F       &kp G         &kp LEFT  &kp ENTER &kp RIGHT  &kp H         &kp J     &kp K     &kp L    &kp SEMI  &lt MAX APOS
+                &kp LSHFT    &kp Z    &kp X    &kp C    &kp V       &kp B    &mup LC(SPACE) LC(LS(M)) &kp DOWN   &kp N         &kp M     &kp COMMA &kp DOT  &kp SLASH &mt RSHFT ENTER
                                                &mo ADJ  &lt LOW TAB &lt MSE SPACE                                &lt NSP SPACE &mo RSE   &mo FUN
             >;
         };
 
-//        colemak_hr_layer { // Layer 3
-//            display-name = "Colemak-HRM";
-//
-//            bindings = <
-//                &kp TAB      &kp Q       &kp W       &kp F        &kp P        &kp G         &kp MINUS                &kp EQUAL &kp J         &kp L        &kp U        &kp Y       &kp SEMI    &kp BSPC
-//                &lt MAX BSPC &hml LALT A &hml RALT R &hml LSHFT S &hml LCTRL T &hml LGUI D   &kp LBKT                 &kp RBKT  &hmr RGUI H   &hmr RCTRL N &hmr RSHFT E &hmr RALT I &hmr LALT O &lt MAX APOS
-//                &kp LSHFT    &kp Z       &kp X       &kp C        &kp V        &kp B         &mup LC(SPACE) LC(LS(M)) &kp SPACE &kp K         &kp M        &kp COMMA    &kp DOT     &kp SLASH   &mt RSHFT ENTER
-//                &kp LCTRL    &kp LGUI    &kp LALT    &mo ADJ      &lt LOW TAB  &lt MSE SPACE &none                    &none     &lt NSP SPACE &mo RSE      &mo FUN      &kp RALT    &kp RGUI    &mt RCTRL ENTER
-//            >;
-//        };
-//
-        colemak_hr_layer { // Layer 3
+        colemak_hr_layer { // Layer 2
             display-name = "CmkHRM";
 
             bindings = <
@@ -306,6 +284,17 @@
                 &lt MAX BSPC &hml LALT A &hll AGR R  &hml LSHFT S &hml LCTRL T &hml LGUI D &kp LEFT  &kp ENTER &kp RIGHT  &hmr RGUI H   &hmr RCTRL N &hmr RSHFT E &hlr AGR I  &hmr LALT O    &lt MAX APOS
                 &kp LSHFT    &kp Z       &kp X       &kp C        &kp V        &kp B   &mup LC(SPACE) LC(LS(M)) &kp DOWN  &kp K         &kp M        &kp COMMA    &kp DOT     &kp SLASH      &mt RSHFT ENTER
                                                      &mo ADJ      &lt LOW TAB  &lt MSE SPACE                              &lt NSP SPACE &mo RSE      &mo FUN
+            >;
+        };
+
+        colemak_layer { // Layer 3
+            display-name = "Colemak";
+    
+            bindings = <
+                &kp TAB      &kp Q    &kp W    &kp F    &kp P       &kp G                   &kp UP               &kp J         &kp L     &kp U     &kp Y    &kp SEMI  &kp BSPC
+                &lt MAX BSPC &kp A    &kp R    &kp S    &kp T       &kp D         &kp LEFT  &kp ENTER &kp RIGHT  &kp H         &kp N     &kp E     &kp I    &kp O     &lt MAX APOS
+                &kp LSHFT    &kp Z    &kp X    &kp C    &kp V       &kp B    &mup LC(SPACE) LC(LS(M)) &kp DOWN   &kp K         &kp M     &kp COMMA &kp DOT  &kp SLASH &mt RSHFT ENTER
+                                               &mo ADJ  &lt LOW TAB &lt MSE SPACE                                &lt NSP SPACE &mo RSE   &mo FUN
             >;
         };
 
