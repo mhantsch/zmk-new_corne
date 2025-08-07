@@ -9,7 +9,7 @@ include:
   - board: eyelash_corne_left
     shield: nice_view
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=y
     artifact-name: eyelash_corne_studio_left
   - board: eyelash_corne_left
     shield: settings_reset
