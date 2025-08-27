@@ -383,7 +383,7 @@
             bindings = <
                 &kp ESC   &kp ESC       &kp LC(W)     &kp LC(PG_UP) &kp LC(PG_DN) &kp LC(F)                          &kp UP               &msc SCRL_UP   &msc SCRL_LEFT &mmv MOVE_UP   &msc SCRL_RIGHT &kp P     &kp BSPC
                 &kp CAPS  &kp A         &mkp MB2      &mkp MB3      &mkp MB1      &kp G                    &kp LEFT  &kp ENTER &kp RIGHT  &msc SCRL_DOWN &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &kp ENTER &kp ENTER
-                &kp LSHFT &kp C_AL_LOCK &kp LC(LS(X)) &kp LC(LS(C)) &kp LC(LS(V)) &mup LC(SPACE) LC(LS(M)) &kp SPACE &kp DOWN             &kp N          &kp M          &kp COMMA      &kp DOT         &kp SLASH &kp RSHFT
+                &kp LSHFT &kp C_AL_LOCK &kp LC(LS(X)) &kp LC(LS(C)) &kp LC(LS(V)) &mup LC(SPACE) LC(LS(M)) &kp SPACE &kp DOWN             &kp LC(LS(N))  &kp M          &kp COMMA      &kp DOT         &kp SLASH &kp RSHFT
                                                       &mo ADJ       &mo LOW       &kp SPACE                                               &mkp MB1       &mo RSE        &mo FUN
             >;
         };
