@@ -576,7 +576,7 @@ layers:
   - {t: Ctl+Sft+M, h: 'Ctl+$$mdi:keyboard-space$$'}
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
-  - N
+  - Ctl+Sft+N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
