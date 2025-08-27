@@ -2,9 +2,11 @@
 include:
   - board: eyelash_corne_left
     shield: nice_view
+    artifact-name: eyelash_corne_left
     #snippet: zmk-usb-logging    # Uncomment to log over USB.
   - board: eyelash_corne_right
     shield: nice_view
+    artifact-name: eyelash_corne_right
     #snippet: zmk-usb-logging
   - board: eyelash_corne_left
     shield: nice_view
@@ -13,5 +15,5 @@ include:
     artifact-name: eyelash_corne_studio_left
   - board: eyelash_corne_left
     shield: settings_reset
+    artifact-name: eyelash_corne_settings_reset
     #snippet: zmk-usb-logging
- 
