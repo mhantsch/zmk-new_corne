@@ -22,7 +22,7 @@
 #define TRN 5       // Transparent (basic querty)
 #define LOW 6       // Lower
 #define RSE 7       // Raise
-#define ADJ 8       // Adjust
+#define ADJ 8       // Adjust (keymap, bluetooth, output, backlight control)
 #define FUN 9       // Function/Media
 #define MAX 10      // Maxtend
 #define MSE 11      // Mouse
@@ -30,6 +30,7 @@
 #define NTB 13      // NumTab (currently unused)
 #define AGR 14      // AltGr (for Windows Umlauts via Alt+Numpad)
 #define AGS 15      // AltGr+Shift (for Windows uppercase Umlauts via Alt+Numpad)
+#define AJ2 16      // Adjust 2 = Adjust+LShift (additional control functions)
 
 // &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
@@ -349,7 +350,7 @@
             bindings = <
                 &kp LA(TAB) &to QTY      &to QTY_HR    &to CMK      &to CMK_HR   &to CMR                   &kp UP               &rgb_ug RGB_ON  &rgb_ug RGB_SAI &rgb_ug RGB_BRI  &rgb_ug RGB_HUI &rgb_ug RGB_EFF &kp LC(LA(DEL))
                 &kp DEL     &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &kp LEFT  &kp ENTER &kp RIGHT  &rgb_ug RGB_OFF &rgb_ug RGB_SAD &rgb_ug RGB_BRD  &rgb_ug RGB_HUD &rgb_ug RGB_EFR &rgb_ug RGB_TOG
-                &trans      &bt BT_CLR   &bt BT_CLR    &out OUT_USB &out OUT_BLE &out OUT_TOG   &kp SPACE  &kp DOWN             &bl BL_ON       &bl BL_OFF      &bl BL_INC       &bl BL_DEC      &bl BL_CYCLE    &bl BL_TOG
+                &mo AJ2     &bt BT_CLR   &bt BT_CLR    &out OUT_USB &out OUT_BLE &out OUT_TOG   &kp SPACE  &kp DOWN             &bl BL_ON       &bl BL_OFF      &bl BL_INC       &bl BL_DEC      &bl BL_CYCLE    &bl BL_TOG
                                                        &trans       &sys_reset   &bootloader                                    &bootloader     &sys_reset      &studio_unlock
             >;
         };
@@ -438,6 +439,16 @@
             >;
         };
 
+        adjust2_layer { // Layer 16 - additional adjust functions
+            display-name = "Adjust 2";
+    
+            bindings = <
+                &none       &to QTY       &to QTY_HR     &to CMK       &to CMK_HR    &to CMR                    &kp UP               &rgb_ug RGB_ON  &rgb_ug RGB_SAI &rgb_ug RGB_BRI  &rgb_ug RGB_HUI &rgb_ug RGB_EFF &kp LC(LA(DEL))
+                &kp DEL     &bt BT_DISC 0 &bt BT_DISC 1  &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4    &kp LEFT  &kp ENTER &kp RIGHT  &rgb_ug RGB_OFF &rgb_ug RGB_SAD &rgb_ug RGB_BRD  &rgb_ug RGB_HUD &rgb_ug RGB_EFR &rgb_ug RGB_TOG
+                &trans      &bt &none     &bt BT_CLR_ALL &out OUT_USB  &out OUT_BLE  &out OUT_TOG    &kp SPACE  &kp DOWN             &bl BL_ON       &bl BL_OFF      &bl BL_INC       &bl BL_DEC      &bl BL_CYCLE    &bl BL_TOG
+                                                       &trans       &sys_reset   &bootloader                                    &bootloader     &sys_reset      &studio_unlock
+            >;
+        };
     };
 };
 
