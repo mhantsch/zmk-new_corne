@@ -421,7 +421,7 @@ layers:
   - RGB HUD
   - RGB EFR
   - RGB TOG
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Adjust 2
   - $$mdi:bluetooth-off$$
   - $$mdi:bluetooth-off$$
   - OUT USB
@@ -784,6 +784,55 @@ layers:
   - $$mdi:keyboard-space$$
   - Raise
   - Fun/Media
+  Adjust 2:
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: Qwerty, h: toggle}
+  - {t: Qty-HRM, h: toggle}
+  - {t: Colemak, h: toggle}
+  - {t: CmkHRM, h: toggle}
+  - {t: rev-Cmk, h: toggle}
+  - $$mdi:arrow-up-bold$$
+  - RGB ON
+  - RGB SAI
+  - RGB BRI
+  - RGB HUI
+  - RGB EFF
+  - Ctl+Alt+$$mdi:backspace-reverse-outline$$
+  - $$mdi:backspace-reverse-outline$$
+  - {t: BT DISC, h: '0'}
+  - {t: BT DISC, h: '1'}
+  - {t: BT DISC, h: '2'}
+  - {t: BT DISC, h: '3'}
+  - {t: BT DISC, h: '4'}
+  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:arrow-right-bold$$
+  - RGB OFF
+  - RGB SAD
+  - RGB BRD
+  - RGB HUD
+  - RGB EFR
+  - RGB TOG
+  - {type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - BT CLR ALL
+  - OUT USB
+  - OUT BLE
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - $$mdi:keyboard-space$$
+  - $$mdi:arrow-down-bold$$
+  - '&bl BL_ON'
+  - '&bl BL_OFF'
+  - '&bl BL_INC'
+  - '&bl BL_DEC'
+  - '&bl BL_CYCLE'
+  - '&bl BL_TOG'
+  - {type: held}
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - $$mdi:progress-download$$
+  - $$mdi:progress-download$$
+  - {t: '$$mdi:backup-restore$$', type: held}
+  - '&studio_unlock'
 combos:
 - p: [1, 2]
   k: $$mdi:keyboard-esc$$
