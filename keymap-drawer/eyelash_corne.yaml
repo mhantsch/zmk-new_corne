@@ -391,7 +391,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-space$$
   - {t: Raise, type: held}
-  - Fun/Media
+  - {t: Fun/Media, h: toggle}
   Adjust:
   - Alt+$$mdi:keyboard-tab$$
   - {t: Qwerty, h: toggle}
@@ -468,7 +468,7 @@ layers:
   - $$mdi:skip-previous$$
   - $$mdi:volume-low$$
   - $$mdi:skip-next$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F11
@@ -481,14 +481,14 @@ layers:
   - Ctl+Sft+N
   - {t: Ctl+Sft+M, h: 'Ctl+$$mdi:keyboard-space$$'}
   - $$mdi:volume-off$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
   - '&studio_unlock'
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:progress-download$$
   - $$mdi:progress-download$$
-  - {t: '$$mdi:backup-restore$$', type: held alternate}
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {type: held}
   Maxtend:
   - $$mdi:keyboard-tab$$
