@@ -340,7 +340,7 @@
                 &kp ESC    &kp N1   &kp N2    &kp N3    &kp N4    &kp N5                 &kp UP              &kp N6    &kp N7    &kp N8    &kp N9   &kp N0    &kp DEL
                 &caps_word &trans   &kp LT    &kp LPAR  &kp RPAR  &kp GT      &kp LEFT  &kp ENTER &kp RIGHT  &kp PLUS  &kp MINUS &kp EQUAL &kp LBKT &kp RBKT  &kp GRAVE
                 &kp LSHFT  &trans   &kp LBKT  &kp RBKT  &kp LBRC  &kp RBRC   &kp SPACE  &kp DOWN             &kp TILDE &kp UNDER &kp NUHS  &kp NUBS &kp PIPE  &kp BACKSLASH
-                                              &mo ADJ   &mo LOW   &kp BSPC                                   &kp SPACE &mo RSE   &mo FUN   
+                                              &mo ADJ   &mo LOW   &kp BSPC                                   &kp SPACE &mo RSE   &tog FUN
             >;
         };
 
@@ -360,9 +360,9 @@
     
             // &kp LC(LS(N)) will actually produce LC(LS(K)) on a Colemak host map - "raise hand" in MS Teams
             bindings = <
-                &kp TAB   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                    &kp UP               &trans        &kp C_PP                 &kp C_VOL_UP &kp PSCRN      &kp SLCK  &kp PAUSE_BREAK
-                &kp CAPS  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10         &kp LEFT  &kp ENTER &kp RIGHT  &trans        &kp C_PREV               &kp C_VOL_DN &kp C_NEXT     &trans    &trans
-                &trans    &kp F11  &kp F12  &trans   &trans   &trans    &kp SPACE       &kp DOWN             &kp LC(LS(N)) &mup LC(SPACE) LC(LS(M)) &kp C_MUTE   &trans         &trans    &trans
+                &kp TAB   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                    &kp UP               &trans        &kp C_PP                 &kp C_VOL_UP &kp PSCRN   &kp SLCK  &kp PAUSE_BREAK
+                &kp CAPS  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10         &kp LEFT  &kp ENTER &kp RIGHT  &trans        &kp C_PREV               &kp C_VOL_DN &kp C_NEXT  &kp UP    &trans
+                &trans    &kp F11  &kp F12  &trans   &trans   &trans    &kp SPACE       &kp DOWN             &kp LC(LS(N)) &mup LC(SPACE) LC(LS(M)) &kp C_MUTE   &kp LEFT    &kp DOWN  &kp RIGHT
                                             &studio_unlock  &sys_reset   &bootloader                         &bootloader   &sys_reset               &trans
             >;
         };
