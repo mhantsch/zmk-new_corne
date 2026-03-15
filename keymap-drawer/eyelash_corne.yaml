@@ -328,10 +328,10 @@ layers:
   - F12
   - AL CALC
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: ;, s: ':'}
+  - P
   - {t: Ctl+Sft+M, h: 'Ctl+$$mdi:keyboard-space$$'}
   - $$mdi:arrow-down-bold$$
-  - ':'
+  - Sft+P
   - KP 1
   - KP 2
   - KP 3
@@ -422,11 +422,11 @@ layers:
   - RGB EFR
   - RGB TOG
   - Adjust 2
-  - $$mdi:bluetooth-off$$
-  - $$mdi:bluetooth-off$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - OUT USB
   - OUT BLE
-  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - '&aim AIM_TOG'
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
   - '&bl BL_ON'
@@ -814,11 +814,11 @@ layers:
   - RGB EFR
   - RGB TOG
   - {type: held}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:bluetooth-off$$
   - BT CLR ALL
   - OUT USB
   - OUT BLE
-  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - '&aim AIM_OFF'
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
   - '&bl BL_ON'
