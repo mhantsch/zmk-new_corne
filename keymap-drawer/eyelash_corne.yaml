@@ -496,7 +496,7 @@ layers:
   - $$mdi:pan-up$$
   - AC BACK
   - AC FORWARD
-  - {t: '$$mdi:transfer$$', type: trans}
+  - KP NUMLOCK
   - $$mdi:arrow-up-bold$$
   - PG UP
   - HOME
@@ -530,7 +530,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-control$$
   - APP
   - $$mdi:apple-keyboard-shift$$
   - Adjust
@@ -797,7 +797,7 @@ layers:
   - RGB BRI
   - RGB HUI
   - RGB EFF
-  - Ctl+Alt+$$mdi:backspace-reverse-outline$$
+  - BT CLR ALL
   - $$mdi:backspace-reverse-outline$$
   - {t: BT DISC, h: '0'}
   - {t: BT DISC, h: '1'}
@@ -815,7 +815,7 @@ layers:
   - RGB TOG
   - {type: held}
   - $$mdi:bluetooth-off$$
-  - BT CLR ALL
+  - $$mdi:bluetooth-off$$
   - OUT USB
   - OUT BLE
   - '&aim AIM_OFF'
