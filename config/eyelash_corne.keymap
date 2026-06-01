@@ -276,7 +276,7 @@
 
             bindings = <
                 &kp TAB      &kp Q       &kp W       &kp E        &kp R        &kp T                 &kp UP               &kp Y         &kp U        &kp I        &kp O       &kp P          &kp BSPC
-                &lt MAX BSPC &hml LALT A &hml RALT S &hml LSHFT D &hml LCTRL F &hml LGUI G &kp LEFT  &kp ENTER &kp RIGHT  &hmr RGUI H   &hmr RCTRL J &hmr RSHFT K &hmr RALT L &hmr LALT SEMI &lt MAX APOS
+                &lt MAX BSPC &hml LALT A &hml RALT S &hml LSHFT D &hml LCTRL F &hml LGUI G &kp LEFT  &kp ENTER &kp RIGHT  &hmr RGUI H   &hmr LCTRL J &hmr RSHFT K &hmr RALT L &hmr LALT SEMI &lt MAX APOS
                 &kp LSHFT    &kp Z       &kp X       &kp C        &kp V        &kp B   &mup LC(SPACE) LC(LS(M)) &kp DOWN  &kp N         &kp M        &kp COMMA    &kp DOT     &kp SLASH      &mt RSHFT ENTER
                                                      &mo ADJ      &lt LOW TAB  &lt MSE SPACE                              &lt NSP SPACE &mo RSE      &mo FUN
             >;
@@ -298,7 +298,7 @@
 
             bindings = <
                 &kp TAB      &kp Q       &kp W       &kp F        &kp P        &kp G                 &kp UP               &kp J         &kp L        &kp U        &kp Y       &kp SEMI       &kp BSPC
-                &lt MAX BSPC &hml LALT A &hll AGR R  &hml LSHFT S &hml LCTRL T &hml LGUI D &kp LEFT  &kp ENTER &kp RIGHT  &hmr RGUI H   &hmr RCTRL N &hmr RSHFT E &hlr AGR I  &hmr LALT O    &lt MAX APOS
+                &lt MAX BSPC &hml LALT A &hll AGR R  &hml LSHFT S &hml LCTRL T &hml LGUI D &kp LEFT  &kp ENTER &kp RIGHT  &hmr RGUI H   &hmr LCTRL N &hmr RSHFT E &hlr AGR I  &hmr LALT O    &lt MAX APOS
                 &kp LSHFT    &kp Z       &kp X       &kp C        &kp V        &kp B   &mup LC(SPACE) LC(LS(M)) &kp DOWN  &kp K         &kp M        &kp COMMA    &kp DOT     &kp SLASH      &mt RSHFT ENTER
                                                      &mo ADJ      &lt LOW TAB  &lt MSE SPACE                              &lt NSP SPACE &mo RSE      &mo FUN
             >;
@@ -387,9 +387,9 @@
             display-name = "Maxtend";
 
             bindings = <
-                &kp TAB   &kp ESC   &msc SCRL_UP   &kp C_AC_BACK &kp C_AC_FORWARD &trans                  &kp UP               &kp PG_UP     &kp HOME  &kp UP     &kp END   &kp DEL   &kp INS
+                &kp TAB   &kp ESC   &msc SCRL_UP   &kp C_AC_BACK &kp C_AC_FORWARD &kp KP_NUMLOCK          &kp UP               &kp PG_UP     &kp HOME  &kp UP     &kp END   &kp DEL   &kp INS
                 &trans    &kp LALT  &msc SCRL_DOWN &kp LSHFT     &kp LCTRL        &kp LGUI      &kp LEFT  &kp ENTER &kp RIGHT  &kp PG_DN     &kp LEFT  &kp DOWN   &kp RIGHT &kp BSPC  &kp ENTER
-                &kp LSHFT &kp LC(Z) &kp LC(X)      &kp LC(C)     &kp LC(V)        &kp LC(B) &kp SPACE     &kp DOWN             &trans        &trans    &trans     &trans    &kp K_APP &kp RSHFT
+                &kp LSHFT &kp LC(Z) &kp LC(X)      &kp LC(C)     &kp LC(V)        &kp LC(B) &kp SPACE     &kp DOWN             &trans        &trans    &trans     &kp RCTRL &kp K_APP &kp RSHFT
                                                    &mo ADJ       &kp LA(TAB)      &kp ENTER                                    &kp LC(SPACE) &mo RSE   &mo FUN
             >;
         };
@@ -457,11 +457,11 @@
 
         adjust2_layer { // Layer 16 - additional adjust functions
             display-name = "Adjust 2";
-    
+
             bindings = <
-                &none       &to QTY       &to QTY_HR     &to CMK       &to CMK_HR    &to CMR                    &kp UP               &rgb_ug RGB_ON  &rgb_ug RGB_SAI &rgb_ug RGB_BRI  &rgb_ug RGB_HUI &rgb_ug RGB_EFF &kp LC(LA(DEL))
-                &kp DEL     &bt BT_DISC 0 &bt BT_DISC 1  &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4    &kp LEFT  &kp ENTER &kp RIGHT  &rgb_ug RGB_OFF &rgb_ug RGB_SAD &rgb_ug RGB_BRD  &rgb_ug RGB_HUD &rgb_ug RGB_EFR &rgb_ug RGB_TOG
-                &trans      &bt BT_CLR    &bt BT_CLR_ALL &out OUT_USB  &out OUT_BLE  &aim AIM_OFF    &kp SPACE  &kp DOWN             &bl BL_ON       &bl BL_OFF      &bl BL_INC       &bl BL_DEC      &bl BL_CYCLE    &bl BL_TOG
+                &none       &to QTY       &to QTY_HR    &to CMK       &to CMK_HR    &to CMR                    &kp UP               &rgb_ug RGB_ON  &rgb_ug RGB_SAI &rgb_ug RGB_BRI  &rgb_ug RGB_HUI &rgb_ug RGB_EFF &bt BT_CLR_ALL
+                &kp DEL     &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4    &kp LEFT  &kp ENTER &kp RIGHT  &rgb_ug RGB_OFF &rgb_ug RGB_SAD &rgb_ug RGB_BRD  &rgb_ug RGB_HUD &rgb_ug RGB_EFR &rgb_ug RGB_TOG
+                &trans      &bt BT_CLR    &bt BT_CLR    &out OUT_USB  &out OUT_BLE  &aim AIM_OFF    &kp SPACE  &kp DOWN             &bl BL_ON       &bl BL_OFF      &bl BL_INC       &bl BL_DEC      &bl BL_CYCLE    &bl BL_TOG
                                                        &trans       &sys_reset   &bootloader                                    &bootloader     &sys_reset      &studio_unlock
             >;
         };
