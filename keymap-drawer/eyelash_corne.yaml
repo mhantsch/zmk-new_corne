@@ -358,11 +358,11 @@ layers:
   - {t: '0', s: )}
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:alpha-w-box$$
-  - {t: '$$mdi:transfer$$', type: trans}
   - <
+  - '>'
   - (
   - )
-  - '>'
+  - {t: '-', s: _}
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
@@ -373,19 +373,19 @@ layers:
   - {t: ']', s: '}'}
   - {t: '`', s: '~'}
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - '{'
   - '}'
+  - Sft+P
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
   - '~'
   - _
   - '#'
   - NUBS
-  - '|'
   - {t: \, s: '|'}
+  - '|'
   - Adjust
   - Lower
   - {t: '$$mdi:backspace$$', type: backspace}
