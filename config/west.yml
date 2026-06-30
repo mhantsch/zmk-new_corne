@@ -8,16 +8,32 @@ manifest:
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
     - name: kbrd-space
       url-base: https://github.com/kbrd-space
+    - name: dhruvinsh
+      url-base: https://github.com/dhruvinsh
+    - name: cormoran
+      url-base: https://github.com/cormoran
   projects:
     - name: eyelash_corne
       url: https://github.com/a741725193/zmk-new_corne
       revision: main
-    - name: zmk
-      remote: zmkfirmware
-      revision: v0.3
-      import: app/west.yml
+#    - name: zmk
+#      remote: zmkfirmware
+#      revision: v0.3
+#      import: app/west.yml
     - name: zmk-anti-idle
       remote: kbrd-space
       revision: main
+    - name: zmk-tri-state
+      remote: dhruvinsh
+      revision: main
+    - name: zmk-module-battery-history
+      remote: cormoran
+      revision: main
+    # Required: Use the custom studio protocol fork
+    - name: zmk
+      remote: cormoran
+      revision: v0.3+custom-studio-protocol
+      import:
+        file: app/west.yml
   self:
     path: config
