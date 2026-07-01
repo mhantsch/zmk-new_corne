@@ -621,6 +621,11 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="770" y="75" width="28" height="26" class="combo enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="775" y="79" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
 </g>
+<g class="combo combopos-4">
+<path d="M103,100 l-13,43" class="combo"/>
+<rect rx="6" ry="6" x="89" y="87" width="28" height="26" class="combo"/>
+<text x="103" y="100" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 318)" class="layer-Qwerty">
@@ -905,6 +910,11 @@ rect.held, rect.combo.held {
 <path d="M784,88 l37,1" class="combo"/>
 <rect rx="6" ry="6" x="770" y="75" width="28" height="26" class="combo enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="775" y="79" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
+</g>
+<g class="combo combopos-4">
+<path d="M103,100 l-13,43" class="combo"/>
+<rect rx="6" ry="6" x="89" y="87" width="28" height="26" class="combo"/>
+<text x="103" y="100" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
 </g>
 </g>
 </g>
@@ -1203,6 +1213,11 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="770" y="75" width="28" height="26" class="combo enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="775" y="79" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
 </g>
+<g class="combo combopos-4">
+<path d="M103,100 l-13,43" class="combo"/>
+<rect rx="6" ry="6" x="89" y="87" width="28" height="26" class="combo"/>
+<text x="103" y="100" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 955)" class="layer-Colemak">
@@ -1487,6 +1502,11 @@ rect.held, rect.combo.held {
 <path d="M784,88 l37,1" class="combo"/>
 <rect rx="6" ry="6" x="770" y="75" width="28" height="26" class="combo enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="775" y="79" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
+</g>
+<g class="combo combopos-4">
+<path d="M103,100 l-13,43" class="combo"/>
+<rect rx="6" ry="6" x="89" y="87" width="28" height="26" class="combo"/>
+<text x="103" y="100" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
 </g>
 </g>
 </g>
@@ -1773,6 +1793,11 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="770" y="75" width="28" height="26" class="combo enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="775" y="79" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
 </g>
+<g class="combo combopos-4">
+<path d="M103,100 l-13,43" class="combo"/>
+<rect rx="6" ry="6" x="89" y="87" width="28" height="26" class="combo"/>
+<text x="103" y="100" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1592)" class="layer-QWERTY (base)">
@@ -2046,7 +2071,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="770" y="75" width="28" height="26" class="combo enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="775" y="79" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
 </g>
-<g class="combo combopos-0">
+<g class="combo combopos-4">
 <path d="M103,100 l-13,43" class="combo"/>
 <rect rx="6" ry="6" x="89" y="87" width="28" height="26" class="combo"/>
 <text x="103" y="100" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
@@ -2343,6 +2368,11 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="770" y="75" width="28" height="26" class="combo enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="775" y="79" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
 </g>
+<g class="combo combopos-2">
+<path d="M103,100 l-13,43" class="combo"/>
+<rect rx="6" ry="6" x="89" y="87" width="28" height="26" class="combo"/>
+<text x="103" y="100" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 2229)" class="layer-Raise">
@@ -2626,6 +2656,11 @@ rect.held, rect.combo.held {
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="42" y="36" width="28" height="26" class="combo"/>
 <text x="56" y="49" class="combo tap"><tspan style="font-size: 60%">&amp;blockquo…</tspan></text>
+</g>
+<g class="combo combopos-3">
+<path d="M103,100 l-13,43" class="combo"/>
+<rect rx="6" ry="6" x="89" y="87" width="28" height="26" class="combo"/>
+<text x="103" y="100" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
 </g>
 </g>
 </g>
@@ -3193,6 +3228,11 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="42" y="36" width="28" height="26" class="combo"/>
 <text x="56" y="49" class="combo tap"><tspan style="font-size: 60%">&amp;blockquo…</tspan></text>
 </g>
+<g class="combo combopos-1">
+<path d="M103,100 l-13,43" class="combo"/>
+<rect rx="6" ry="6" x="89" y="87" width="28" height="26" class="combo"/>
+<text x="103" y="100" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 3185)" class="layer-Maxtend">
@@ -3450,6 +3490,11 @@ rect.held, rect.combo.held {
 <text x="0" y="-4" class="key tap">
 <tspan x="0" dy="-0.6em">Fun/</tspan><tspan x="0" dy="1.2em">Media</tspan>
 </text>
+</g>
+<g class="combo combopos-0">
+<path d="M103,100 l-13,43" class="combo"/>
+<rect rx="6" ry="6" x="89" y="87" width="28" height="26" class="combo"/>
+<text x="103" y="100" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
 </g>
 </g>
 </g>
@@ -3731,6 +3776,11 @@ rect.held, rect.combo.held {
 <tspan x="0" dy="-0.6em">Fun/</tspan><tspan x="0" dy="1.2em">Media</tspan>
 </text>
 </g>
+<g class="combo combopos-0">
+<path d="M103,100 l-13,43" class="combo"/>
+<rect rx="6" ry="6" x="89" y="87" width="28" height="26" class="combo"/>
+<text x="103" y="100" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 3822)" class="layer-NumSpc">
@@ -4003,6 +4053,11 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="42" y="36" width="28" height="26" class="combo"/>
 <text x="56" y="49" class="combo tap"><tspan style="font-size: 60%">&amp;blockquo…</tspan></text>
 </g>
+<g class="combo combopos-1">
+<path d="M103,100 l-13,43" class="combo"/>
+<rect rx="6" ry="6" x="89" y="87" width="28" height="26" class="combo"/>
+<text x="103" y="100" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 4140)" class="layer-NumTab">
@@ -4257,6 +4312,11 @@ rect.held, rect.combo.held {
 <text x="0" y="-4" class="key tap">
 <tspan x="0" dy="-0.6em">Fun/</tspan><tspan x="0" dy="1.2em">Media</tspan>
 </text>
+</g>
+<g class="combo combopos-0">
+<path d="M103,100 l-13,43" class="combo"/>
+<rect rx="6" ry="6" x="89" y="87" width="28" height="26" class="combo"/>
+<text x="103" y="100" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
 </g>
 </g>
 </g>
@@ -4520,6 +4580,11 @@ rect.held, rect.combo.held {
 <tspan x="0" dy="-0.6em">Fun/</tspan><tspan x="0" dy="1.2em">Media</tspan>
 </text>
 </g>
+<g class="combo combopos-0">
+<path d="M103,100 l-13,43" class="combo"/>
+<rect rx="6" ry="6" x="89" y="87" width="28" height="26" class="combo"/>
+<text x="103" y="100" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 4777)" class="layer-AltGrShft">
@@ -4773,6 +4838,11 @@ rect.held, rect.combo.held {
 <text x="0" y="-4" class="key tap">
 <tspan x="0" dy="-0.6em">Fun/</tspan><tspan x="0" dy="1.2em">Media</tspan>
 </text>
+</g>
+<g class="combo combopos-0">
+<path d="M103,100 l-13,43" class="combo"/>
+<rect rx="6" ry="6" x="89" y="87" width="28" height="26" class="combo"/>
+<text x="103" y="100" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
 </g>
 </g>
 </g>

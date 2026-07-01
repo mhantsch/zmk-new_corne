@@ -831,12 +831,23 @@ layers:
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:progress-download$$
   - $$mdi:progress-download$$
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - SCROLLLOCK
-  - PAUSE BREAK
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backup-restore$$', type: held}
+  - '&studio_unlock'
+combos:
+- p: [1, 2]
+  k: $$mdi:keyboard-esc$$
+  l: [Qwerty, Qty-HRM, Colemak, CmkHRM, rev-Cmk, QWERTY (base)]
+- p: [0, 1]
+  k: $$mdi:keyboard-esc$$
+  l: [Qwerty, Qty-HRM, Colemak, CmkHRM, rev-Cmk, QWERTY (base)]
+- p: [26, 27]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
+  l: [Qwerty, Qty-HRM, Colemak, CmkHRM, rev-Cmk, QWERTY (base), Lower, Raise]
+- p: [23, 24, 25]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
+  l: [Qwerty, Qty-HRM, Colemak, CmkHRM, rev-Cmk, QWERTY (base), Lower, Raise]
+- p: [0, 1]
+  k: '&blockquote'
+  l: [Raise, Fun/Media, NumSpc]
+- p: [1, 15, 29]
+  k: '&soft_off'
