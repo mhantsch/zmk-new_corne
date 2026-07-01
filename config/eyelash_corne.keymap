@@ -3,6 +3,7 @@
 #include <behaviors.dtsi>
 #include <behaviors/runtime-sensor-rotate.dtsi>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
@@ -18,11 +19,6 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 30    // default: 10
 
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/rgb.h>
-
-&soft_off { hold-time-ms = <2000>; };
-
-/ {
 #include <dt-bindings/zmk/mouse.h>
 
 #define QTY_HR 0    // QWERTY w/ HRM
@@ -43,21 +39,7 @@
 #define AGS 15      // AltGr+Shift (for Windows uppercase Umlauts via Alt+Numpad)
 #define AJ2 16      // Adjust 2 = Adjust+LShift (additional control functions)
 
-// &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
-
-// &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
-
-// &msc {
-//     acceleration-exponent = <1>;      // 0
-//     time-to-max-speed-ms = <100>;     // 300
-//     delay-ms = <0>;                   // 0
-// };
-
-// &mmv {
-//     time-to-max-speed-ms = <500>;
-//     acceleration-exponent = <1>;
-//     trigger-period-ms = <16>;
-// };
+&soft_off { hold-time-ms = <2000>; };
 
 &lt {
     quick-tap-ms = <200>;
@@ -65,8 +47,21 @@
 
 &caps_word {
     continue-list = <UNDERSCORE BACKSPACE DELETE SEMI>;  
-    // SEMI is added here because QWERTY semicolon is letter 'O' in Colemak. Unfortunately, it doesn't automatically get shifted.
+    // SEMI is added here because QWERTY semicolon is letter 'O' in Colemak. 
+    // Unfortunately, it doesn't automatically get shifted.
 };
+
+//  key positions (for hold-trigger-key-positions):
+//  (0) TAB       (1))Q     (2) W     (3) E     (4) R        (5) T                      (6) up               (7) Y          (8) U      (9) I      (10) O    (11) P     (12) BSPC
+//  (13) MAX BSPC (14) A    (15) S    (16) D    (17) F       (18) G         (19) left  (20) mid  (21) right  (22) H         (23) J     (24) K     (25) L    (26) SEMI  (27) APOS
+//  (28) LSHFT    (29) Z    (30) X    (31) C    (32) V       (33) B         (34) mute  (35) down             (36) N         (37) M     (38) COMMA (39) DOT  (40) SLASH (41) RSHFT ENTER
+//                                    (42) ADJ  (43) LOW TAB (44) MSE SPACE                                  (45) NSP SPACE (46) RSE   (47) FUN
+
+#define LEFT_SIDE_KEYS 0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33 34
+#define RIGHT_SIDE_KEYS 7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41
+#define LEFT_SIDE_THUMBS 42 43 44
+#define RIGHT_SIDE_THUMBS 45 46 47
+#define TAB_THUMB 43
 
 / {
     // configure anti-idle.
@@ -80,6 +75,14 @@
     };
 
     behaviors {
+        alttab: alttab {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            ignored-key-positions = <LEFT_SIDE_KEYS RIGHT_SIDE_KEYS>;
+            ignored-layers = <ADJ>;
+        };
+
         mup: mute_unmute_ptt {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -97,9 +100,9 @@
             quick-tap-ms = <200>;
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41 43 44 45 46 47>;
+            hold-trigger-key-positions = <RIGHT_SIDE_KEYS TAB_THUMB>;
             // these are all the right-side buttons
-            // left-side thumb button for LOW/TAB also included (43), allowing Alt-TAB with left hand without tapping-term-ms delay.
+            // left-side thumb button for LOW/TAB also included, allowing Alt-TAB with left hand without tapping-term-ms delay.
             hold-trigger-on-release;
         };
 
@@ -111,7 +114,7 @@
             quick-tap-ms = <200>;
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33 42 43 44 45>;
+            hold-trigger-key-positions = <LEFT_SIDE_KEYS>;
             // these are all the left-side buttons
             hold-trigger-on-release;
         };
@@ -124,7 +127,7 @@
             quick-tap-ms = <200>;
             require-prior-idle-ms = <100>;
             bindings = <&mo>, <&kp>;
-            hold-trigger-key-positions = <7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41 44 45 46 47>;
+            hold-trigger-key-positions = <RIGHT_SIDE_KEYS>;
             // these are all the right-side buttons
             // left-side thumb button for LOW/TAB also included, allowing Alt-TAB with left hand without tapping-term-ms delay.
             hold-trigger-on-release;
@@ -138,7 +141,7 @@
             quick-tap-ms = <200>;
             require-prior-idle-ms = <100>;
             bindings = <&mo>, <&kp>;
-            hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33 42 43 44 45>;
+            hold-trigger-key-positions = <LEFT_SIDE_KEYS>;
             // these are all the left-side buttons
             hold-trigger-on-release;
         };
@@ -162,6 +165,7 @@
 //            #binding-cells = <0>;
 //            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
 //        };
+
         rsr_vol: rsr_vol {
             compatible = "zmk,behavior-runtime-sensor-rotate";
             #sensor-binding-cells = <0>;
@@ -169,12 +173,12 @@
             cw-binding = <&kp C_VOL_UP>;
             ccw-binding = <&kp C_VOL_DN>;
         };
+
         rsr_trans: rsr_trans {
             compatible = "zmk,behavior-runtime-sensor-rotate";
             #sensor-binding-cells = <0>;
             tap-ms = <0>;
         };
-
     };
 
 //  key positions (for hold-trigger-key-positions):
