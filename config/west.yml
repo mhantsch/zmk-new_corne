@@ -2,16 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-      # Additional modules containing boards/shields/custom code can be listed here as well.
-      # See:
-      # - https://zmk.dev/docs/features/modules
-      # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
+    - name: cormoran
+      url-base: https://github.com/cormoran
     - name: kbrd-space
       url-base: https://github.com/kbrd-space
     - name: dhruvinsh
       url-base: https://github.com/dhruvinsh
-    - name: cormoran
-      url-base: https://github.com/cormoran
   projects:
     - name: eyelash_corne
       url: https://github.com/a741725193/zmk-new_corne
@@ -20,20 +16,30 @@ manifest:
 #      remote: zmkfirmware
 #      revision: v0.3
 #      import: app/west.yml
+    - name: zmk
+      remote: cormoran
+      revision: v0.3-branch+dya
+      import: app/west.yml
+    - name: zmk-behavior-runtime-sensor-rotate
+      remote: cormoran
+      revision: main
+    - name: zmk-module-ble-management
+      remote: cormoran
+      revision: zmk-v0.3.0.0
+    - name: zmk-module-battery-history
+      remote: cormoran
+      revision: main
+    - name: zmk-module-settings-rpc
+      remote: cormoran
+      revision: main
+    - name: zmk-module-runtime-input-processor
+      remote: cormoran
+      revision: zmk-v0.3.0.0
     - name: zmk-anti-idle
       remote: kbrd-space
       revision: main
     - name: zmk-tri-state
       remote: dhruvinsh
       revision: main
-    - name: zmk-module-battery-history
-      remote: cormoran
-      revision: main
-    # Required: Use the custom studio protocol fork
-    - name: zmk
-      remote: cormoran
-      revision: v0.3+custom-studio-protocol
-      import:
-        file: app/west.yml
   self:
     path: config
